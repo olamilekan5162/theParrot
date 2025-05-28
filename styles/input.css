@@ -3,3 +3,7 @@
 @theme {
   --color-clifford: #da373d;
 }
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

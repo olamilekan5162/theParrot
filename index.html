@@ -11,9 +11,9 @@
       <a href="/" class="font-bold text-2xl text-red-600">
         The<span class="text-blue-600">Parrot</span>
       </a>
-      <ul class="flex flex-row items-center gap-5">
+      <ul class="hidden sm:flex flex-row items-center gap-5 font-bold">
         <li
-          class="bg-blue-200 text-blue-600 px-2 py-1 rounded-sm hover:opacity-80"
+          class="bg-blue-50 text-blue-600 px-2 py-1 rounded-sm hover:opacity-80"
         >
           <a href="./pages/home">Home</a>
         </li>
@@ -23,8 +23,111 @@
       </ul>
     </nav>
     <!-- hero section  -->
-    <section class="flex flex-col w-[50%]">
-
-    </div>
+    <section class="flex flex-col sm:w-[30%] mx-auto mt-10 items-center gap-2">
+      <h1 class="text-3xl font-bold">Stories & Ideas</h1>
+      <p class="text-sm text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        perspiciatis consectetur veniam sit, debitis vero impedit reiciendis?
+        Placeat, sequi asperiores?
+      </p>
+    </section>
+    <!-- main content -->
+    <main class="mt-10 sm:w-[50%] mx-auto">
+      <div class="sm:grid grid-cols-2 justify-around flex flex-row flex-wrap">
+        <!-- featured story  -->
+        <div class="col-span-1 flex flex-col gap-5">
+          <img
+            src="./assets/images/you.jpg"
+            alt="rebirth cover"
+            class="w-[400px] h-auto"
+          />
+          <h1 class="font-bold text-blue-600">Romance</h1>
+          <h1 class="font-bold text-2xl">
+            The Love Chronicles of Adama the Village girl and the crowned prince
+            tega
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+            tempore, dolor, eos neque quidem ipsa, minus voluptatem corporis
+            quam eius dicta. Nam soluta quis minus, consectetur sequi recusandae
+            repudiandae vero.
+          </p>
+        </div>
+        <!-- top stories  -->
+        <div class="col-span-1 flex flex-col gap-5">
+          <h1 class="font-bold text-2xl text-blue-600">Top Stories</h1>
+          <!-- story 1 -->
+          <div class="flex flex-row shadow-md h-fit p-1 hover:scale-101">
+            <div class="w-[80%] flex flex-row justify-between gap-2 p-1">
+              <div
+                class="bg-red-600 rounded-full w-5 h-5 font-bold text-sm flex items-center justify-center text-white flex-shrink-0"
+              >
+                1
+              </div>
+              <div class="flex flex-col justify-between pr-4">
+                <h1 class="font-bold">
+                  The Rebirth of Bibilari the Sturbborn kid in the evil forest
+                </h1>
+                <p class="font-medium text-sm">Oracle Smith</p>
+              </div>
+            </div>
+            <div class="w-[20%]">
+              <img
+                src="./assets/images/Rebirth.jpg"
+                alt="rebirth cover"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+          <!-- story 2 -->
+          <div class="flex flex-row shadow-md h-fit p-1 hover:scale-101">
+            <div class="w-[80%] flex flex-row justify-between gap-2 p-1">
+              <div
+                class="bg-red-600 rounded-full w-5 h-5 font-bold text-sm flex items-center justify-center text-white flex-shrink-0"
+              >
+                2
+              </div>
+              <div class="flex flex-col justify-between pr-4">
+                <h1 class="font-bold">
+                  The Rebirth of Bibilari the Sturbborn kid in the evil forest
+                </h1>
+                <p class="font-medium text-sm">Oracle Smith</p>
+              </div>
+            </div>
+            <div class="w-[20%]">
+              <img
+                src="./assets/images/guitar.jpg"
+                alt="rebirth cover"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+          <!-- story 3 -->
+          <div class="flex flex-row shadow-md h-fit p-1 hover:scale-101">
+            <div class="w-[80%] flex flex-row justify-between gap-2 p-1">
+              <div
+                class="bg-red-600 rounded-full w-5 h-5 font-bold text-sm flex items-center justify-center text-white flex-shrink-0"
+              >
+                3
+              </div>
+              <div class="flex flex-col justify-between pr-4">
+                <h1 class="font-bold">
+                  The Love Chronicles of Adama the Village girl and the crowned
+                  prince tegas
+                </h1>
+                <p class="font-medium text-sm">Oracle Smith</p>
+              </div>
+            </div>
+            <div class="w-[20%]">
+              <img
+                src="./assets/images/you.jpg"
+                alt="rebirth cover"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
