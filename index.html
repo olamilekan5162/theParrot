@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+    <link href="./styles/output.css" rel="stylesheet" />
     <title>The Parrot</title>
   </head>
-  <body>
-    <h1 class="text-clifford">hello</h1>
+  <body class="w-full h-screen">
+    <nav class="flex flex-row items-center justify-around h-[100px]">
+      <a href="/" class="font-bold text-2xl text-red-600">
+        The<span class="text-blue-600">Parrot</span>
+      </a>
+      <ul class="flex flex-row items-center gap-5">
+        <li
+          class="bg-blue-200 text-blue-600 px-2 py-1 rounded-sm hover:opacity-80"
+        >
+          <a href="./pages/home">Home</a>
+        </li>
+        <li class="hover:text-blue-600"><a href="./pages/home">Service</a></li>
+        <li class="hover:text-blue-600"><a href="./pages/home">Contact</a></li>
+        <li class="hover:text-blue-600"><a href="./pages/home">Login</a></li>
+      </ul>
+    </nav>
+    <!-- hero section  -->
+    <section class="flex flex-col w-[50%]">
+
+    </div>
   </body>
 </html>
