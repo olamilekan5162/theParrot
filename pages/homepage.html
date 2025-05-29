@@ -8,7 +8,7 @@
   </head>
   <body class="w-full h-screen">
     <!-- navbar -->
-    <nav class="flex flex-row items-center justify-around h-[100px]">
+    <nav class="flex flex-row items-center justify-around h-[100px] shadow-sm">
       <a href="/" class="font-bold text-2xl text-red-600">
         The<span class="text-blue-900">Parrot</span>
       </a>
@@ -24,7 +24,9 @@
       </ul>
     </nav>
     <!-- hero section  -->
-    <section class="flex flex-col sm:w-[30%] mx-auto mt-5 items-center gap-2">
+    <section
+      class="flex flex-col sm:w-[30%] mx-auto mt-8 items-center gap-2 px-2"
+    >
       <h1 class="text-3xl font-bold">Stories & Ideas</h1>
       <p class="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
@@ -33,17 +35,19 @@
       </p>
     </section>
     <!-- main content -->
-    <main class="my-12 sm:w-[70%] mx-auto">
-      <div class="flex flex-row">
+    <main class="my-8 sm:w-[70%] mx-auto">
+      <div class="flex flex-row flex-wrap sm:gap-0 gap-5">
         <!-- featured story  -->
-        <div class="w-[70%]">
-          <div class="flex flex-col gap-5 w-[70%]">
+        <div class="sm:w-[70%] p-4">
+          <div class="flex flex-col gap-5 sm:w-[80%] w-full">
             <h1 class="font-bold text-2xl text-blue-900">Featured Story</h1>
-            <img
-              src="../assets/images/you.jpg"
-              alt="rebirth cover"
-              class="w-full h-[300px]"
-            />
+            <div class="w-full h-[300px] overflow-hidden flex items-center">
+              <img
+                src="../assets/images/you.jpg"
+                alt="rebirth cover"
+                class="w-full h-auto"
+              />
+            </div>
             <h1 class="font-bold text-blue-900">Romance</h1>
             <a href="./story3.html" class="font-bold text-2xl">
               The Love Chronicles of Adama the Village girl and the crowned
@@ -59,7 +63,7 @@
         </div>
 
         <!-- top stories  -->
-        <div class="flex flex-col gap-5 w-[30%]">
+        <div class="flex flex-col gap-5 sm:w-[30%] p-4 sm:p-0">
           <h1 class="font-bold text-2xl text-blue-900">Top Stories</h1>
 
           <!-- story 1 -->
@@ -74,7 +78,7 @@
                 1
               </div>
               <div class="flex flex-col justify-between gap-2 pr-4">
-                <h1 class="font-bold">
+                <h1 class="font-bold sm:text-base text-sm">
                   The Rebirth of Bibilari the Sturbborn kid in the evil forest
                 </h1>
                 <p class="font-medium text-sm">Juliet Wood</p>
@@ -101,7 +105,7 @@
                 2
               </div>
               <div class="w-full flex flex-col justify-between gap-2 pr-4">
-                <h1 class="font-bold">
+                <h1 class="font-bold sm:text-base text-sm">
                   The Singing Monkey with melodius voice
                 </h1>
                 <p class="font-medium text-sm">Oracle Smith</p>
@@ -128,7 +132,7 @@
                 3
               </div>
               <div class="flex flex-col justify-between gap-2 pr-4">
-                <h1 class="font-bold">
+                <h1 class="font-bold sm:text-base text-sm">
                   The Love Chronicles of Adama the Village girl and the crowned
                   prince tegas
                 </h1>
