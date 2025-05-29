@@ -7,6 +7,7 @@
     <title>The Parrot</title>
   </head>
   <body class="w-full h-screen">
+    <!-- navbar -->
     <nav class="flex flex-row items-center justify-around h-[100px]">
       <a href="/" class="font-bold text-2xl text-red-600">
         The<span class="text-blue-900">Parrot</span>
@@ -15,17 +16,17 @@
         <li
           class="bg-blue-50 text-blue-900 px-2 py-1 rounded-sm hover:opacity-80"
         >
-          <a href="./pages/home">Home</a>
+          <a href="./pages/homepage">Home</a>
         </li>
-        <li class="hover:text-blue-900"><a href="./pages/home">Service</a></li>
-        <li class="hover:text-blue-900"><a href="./pages/home">Contact</a></li>
-        <li class="hover:text-blue-900"><a href="./pages/home">Login</a></li>
+        <li class="hover:text-blue-900"><a href="/">Service</a></li>
+        <li class="hover:text-blue-900"><a href="/">Contact</a></li>
+        <li class="hover:text-blue-900"><a href="/">Login</a></li>
       </ul>
     </nav>
     <!-- hero section  -->
     <section class="flex flex-col sm:w-[30%] mx-auto mt-5 items-center gap-2">
       <h1 class="text-3xl font-bold">Stories & Ideas</h1>
-      <p class="text-sm text-center">
+      <p class="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
         perspiciatis consectetur veniam sit, debitis vero impedit reiciendis?
         Placeat, sequi asperiores?
@@ -62,7 +63,8 @@
           <h1 class="font-bold text-2xl text-blue-900">Top Stories</h1>
 
           <!-- story 1 -->
-          <div
+          <a
+            href="./pages/story1.html"
             class="flex flex-row shadow-md h-fit p-1 hover:scale-101 cursor-pointer"
           >
             <div class="w-[80%] flex flex-row justify-between gap-2 p-1">
@@ -71,7 +73,7 @@
               >
                 1
               </div>
-              <div class="flex flex-col justify-between pr-4">
+              <div class="flex flex-col justify-between gap-2 pr-4">
                 <h1 class="font-bold">
                   The Rebirth of Bibilari the Sturbborn kid in the evil forest
                 </h1>
@@ -85,7 +87,7 @@
                 class="w-full h-auto"
               />
             </div>
-          </div>
+          </a>
 
           <!-- story 2 -->
           <div
@@ -97,7 +99,7 @@
               >
                 2
               </div>
-              <div class="w-full flex flex-col justify-between pr-4">
+              <div class="w-full flex flex-col justify-between gap-2 pr-4">
                 <h1 class="font-bold">
                   The Singing Monkey with melodius voice
                 </h1>
@@ -123,7 +125,7 @@
               >
                 3
               </div>
-              <div class="flex flex-col justify-between pr-4">
+              <div class="flex flex-col justify-between gap-2 pr-4">
                 <h1 class="font-bold">
                   The Love Chronicles of Adama the Village girl and the crowned
                   prince tegas
@@ -157,7 +159,10 @@
                   class="w-full h-auto"
                 />
               </div>
-              <h1 class="font-bold text-blue-900">Oracle Smith - 2020</h1>
+              <h1 class="font-medium text-blue-900">
+                Oracle Smith <span class="mx-2">|</span>
+                <span>September 20, 2020</span>
+              </h1>
               <h1 class="font-bold text-2xl">
                 The Singing Monkey with melodius voice
               </h1>
@@ -171,9 +176,6 @@
               <div class="flex flex-row gap-6">
                 <p class="bg-blue-50 text-blue-900 px-2 py-1 rounded-sm">
                   Comedy
-                </p>
-                <p class="bg-blue-50 text-blue-900 px-2 py-1 rounded-sm">
-                  Laughter
                 </p>
               </div>
             </div>
@@ -189,7 +191,10 @@
                   class="w-full h-auto"
                 />
               </div>
-              <h1 class="font-bold text-blue-900">Juliet Wood - 20203</h1>
+              <h1 class="font-medium text-blue-900">
+                Juliet Wood <span class="mx-2">|</span>
+                <span>January 25, 2023</span>
+              </h1>
               <h1 class="font-bold text-2xl">
                 The Rebirth of Bibilari the Sturbborn kid in the evil forest
               </h1>
