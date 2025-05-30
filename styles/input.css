@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-clifford: #da373d;
+  --color-primary: var(--color-green-900);
+  --color-secondary: var(--color-red-900);
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace, Helvetica;
 }
