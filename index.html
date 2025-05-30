@@ -6,25 +6,80 @@
     <link href="./styles/output.css" rel="stylesheet" />
     <title>The Parrot</title>
   </head>
-  <body class="w-full h-screen">
+  <body class="w-full h-screen bg-bg">
     <!-- navbar -->
-    <nav class="flex flex-row items-center justify-around h-[100px] shadow-sm">
-      <a href="./index.html" class="font-bold text-2xl text-secondary">
+    <nav
+      class="flex flex-row items-center justify-around h-[80px] shadow-md bg-bg fixed top-0 left-0 right-0 z-50"
+    >
+      <a href="./index.html" class="font-extrabold text-2xl text-secondary">
         The<span class="text-primary">Parrot</span>
       </a>
       <ul class="hidden sm:flex flex-row items-center gap-5 font-bold">
         <li
           class="bg-green-50 text-primary px-2 py-1 rounded-sm hover:opacity-80"
         >
-          <a href="./pages/homepage">Home</a>
+          <a href="./pages/homepage.html">Home</a>
         </li>
         <li class="hover:text-primary"><a href="/">Service</a></li>
         <li class="hover:text-primary"><a href="/">Contact</a></li>
         <li class="hover:text-primary"><a href="/">Login</a></li>
       </ul>
     </nav>
-    <div
-      class="sm:w-[70%] h-screen mx-auto flex items-center justify-center flex-col gap-20"
+    <!-- hero section -->
+    <section class="relative h-screen mt-[80px] flex items-center">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-green-100/80 to-red-100/80"
+        ></div>
+        <img
+          src="./assets/images/detail.jpg"
+          alt="cover"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="flex flex-row flex-wrap w-[full] h-fit z-10">
+        <div class="flex-1/2">
+          <div class="sm:w-[70%] mx-auto p-4 flex flex-col gap-6">
+            <h1 class="font-extrabold text-4xl font-sans">
+              Your Story, Your Voice, Your Platform: Share Your Passion, Inspire
+              Others, and Connect with Readers Who Care
+            </h1>
+            <p>
+              We believe everyone has a story worth telling. Share yours with
+              the world, connect with readers who appreciate your unique voice,
+              and be part of a community that supports and inspires you.
+            </p>
+            <div>
+              <a
+                href="./pages/homepage.html"
+                class="bg-primary text-white py-2 px-6 rounded-sm hover:opacity-80"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-1/2 flex flex-row flex-wrap gap-8">
+          <div class="w-[300px] h-[350px] rounded-lg hover:rotate-0 rotate-5">
+            <img
+              src="./assets/images/Rebirth.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div
+            class="w-[300px] h-[350px] rounded-lg rotate-[-5deg] hover:rotate-0"
+          >
+            <img
+              src="./assets/images/guitar.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div
+      class="sm:w-[70%] h-[500px] mx-auto flex items-center justify-center flex-col gap-20"
     >
       <h1 class="text-4xl text-center sm:text-6xl font-bold sm:max-w-[50%]">
         This is the Landing Page, Work Still going on here
@@ -34,6 +89,11 @@
         class="bg-primary text-white py-2 px-3 rounded-sm hover:opacity-80"
         >Go to Homepage</a
       >
-    </div>
+    </div> -->
+    <footer
+      class="flex items-center justify-center gap-5 sm:gap-10 py-5 my-auto border-t-1 border-[#e5e7eb]"
+    >
+      <div>&copy; 2025 TheParrot. All rights reserved.</div>
+    </footer>
   </body>
 </html>
