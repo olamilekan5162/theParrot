@@ -63,38 +63,47 @@ const storyCollection = [
 
 const mainMenu = () => {
   const userChoice = prompt(
-    "Enter the value for the service you want \n1. Search for Story by theme \n2. print story list by theme"
+    "Enter the value for the service you want \n1. Search for Story by theme \n2. Print total number of story by theme"
   );
   if (userChoice === "1") {
     search();
   } else if (userChoice === "2") {
-    storyList();
+    themeList();
   }
 };
+
+// thought process for searching
+// 1. i prompt the user to enter the theme name of the story they are looking for
+// 2. I loop through the story collection array and check if the array contains the theme name searched by the user
+// 3. if it is found i log all story with the theme name in a table
 
 const search = () => {
   const theme = prompt("Search for story by theme name ...");
+  let isfound = false;
 
-  try {
-    for (const i in storyCollection) {
-      if (
-        storyCollection[i].theme.toLocaleLowerCase() ===
-        theme.toLocaleLowerCase()
-      ) {
-        console.table(storyCollection[i]);
-      } else {
-        console.error("No matching story with the theme name");
-      }
+  for (let i of storyCollection) {
+    if (i.theme.toLocaleLowerCase() === theme.toLocaleLowerCase()) {
+      isfound = true;
+      console.table(i);
     }
-  } catch (e) {
-    console.error(e);
+  }
+  if (!isfound) {
+    console.error("No matching story with the theme name");
   }
 };
 
-const storyList = () => {
-  for (const i in storyCollection) {
-    console.table(storyCollection[i]);
+const themeList = () => {
+  const themeCount = {};
+
+  for (let i of storyCollection) {
+    if (i.theme in themeCount) {
+      themeCount[i.theme]++;
+    } else {
+      themeCount[i.theme] = 1;
+    }
   }
+
+  console.table(themeCount);
 };
 
 mainMenu();
