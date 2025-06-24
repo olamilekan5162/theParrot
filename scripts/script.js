@@ -83,7 +83,12 @@ const storyCollection = [
 
 const mainMenu = () => {
   const userChoice = prompt(
-    "Enter the value for the service you want \n1. Search for Story by theme \n2. Print total number of story by theme \n3. Add a new Story"
+    `Enter the value for the service you want 
+    1. Search for Story by theme
+    2. Print total number of story by theme
+    3. Add a new Story
+    4. Find longest story
+    5. check total books by author`
   );
   if (userChoice === "1") {
     search();
@@ -93,6 +98,8 @@ const mainMenu = () => {
     addStory();
   } else if (userChoice === "4") {
     longestStory();
+  } else if (userChoice === "5") {
+    booksByAuthors();
   } else {
     mainMenu();
   }
