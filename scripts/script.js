@@ -108,7 +108,10 @@ const mainMenu = () => {
     2. Print total number of story by theme
     3. Add a new Story
     4. Find longest story
-    5. check total books by author`
+    5. Check total books by author
+    6. Toggle Published stories
+    7. Get Published Stories
+    8. Delete stories`
   );
   if (userChoice === "1") {
     search();
@@ -120,6 +123,12 @@ const mainMenu = () => {
     longestStory();
   } else if (userChoice === "5") {
     booksByAuthors();
+  } else if (userChoice === "6") {
+    togglePublished();
+  } else if (userChoice === "7") {
+    getPublishedStories();
+  } else if (userChoice === "8") {
+    deleteStory();
   } else {
     mainMenu();
   }
@@ -178,10 +187,10 @@ const addStory = () => {
     author: author,
     region: region,
     theme: theme,
+    published: false,
     story: story,
   });
   console.log(`${title} by ${author} addedd successfully`);
-
   console.table(storyCollection);
 };
 
@@ -210,7 +219,7 @@ const booksByAuthors = () => {
 };
 
 const togglePublished = () => {
-  const id = parseInt(prompt("Enter the id of the story you want to toggle"));
+  let id = parseInt(prompt("Enter the id of the story you want to toggle"));
   for (i of storyCollection) {
     if (i.id === id) {
       i.published = !i.published;
@@ -220,4 +229,24 @@ const togglePublished = () => {
   }
 };
 
-togglePublished();
+const getPublishedStories = () => {
+  const publishedStories = [];
+  for (i of storyCollection) {
+    if (i.published === true) {
+      publishedStories.push(i);
+    }
+  }
+  console.table(publishedStories);
+};
+
+const deleteStory = () => {
+  let id = parseInt(prompt("Enter the id of the story you want to delete"));
+  for (i in storyCollection) {
+    if (storyCollection[i].id === id) {
+      storyCollection.splice(i, 1);
+    }
+  }
+  console.table(storyCollection);
+};
+
+mainMenu();
