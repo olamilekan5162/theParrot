@@ -1,81 +1,101 @@
 const storyCollection = [
   {
+    id: 1,
     title: "The Whispering Woods",
     author: "Emily J. Miller",
     region: "North America",
     theme: "Mystery",
+    published: false,
     story:
       "ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 2,
     title: "Sahara Nights",
     author: "Amira Hassan",
     region: "Africa",
     theme: "Romance",
+    published: false,
     story:
       "dolor sit amet consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 3,
     title: "The Last Leaf",
     author: "Emily J. Miller",
     region: "Asia",
     theme: "Drama",
+    published: false,
     story:
       "sit amet consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 4,
     title: "Moonlit Serenade",
     author: "Sofia Rodriguez",
     region: "South America",
     theme: "Romance",
+    published: true,
     story:
       "amet consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 5,
     title: "The Forgotten City",
     author: "Emily J. Miller",
     region: "Europe",
     theme: "Adventure",
+    published: true,
     story:
       "consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 6,
     title: "Desert Dreams",
     author: "Aisha Ali",
     region: "Middle East",
     theme: "Inspiration",
+    published: true,
     story:
       "jaga adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 7,
     title: "The Stormy Night",
     author: "Mia Kim",
     region: "Asia",
     theme: "Thriller",
+    published: true,
     story:
       "adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 8,
     title: "The Lost Explorer",
     author: "Jack Taylor",
     region: "North America",
     theme: "Adventure",
+    published: true,
     story:
       "elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 9,
     title: "The Secret Garden",
     author: "Mia Kim",
     region: "Europe",
     theme: "Drama",
+    published: false,
     story:
       "Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
   {
+    id: 10,
     title: "The Starry Sky",
     author: "Ahmed Mohamed",
     region: "Africa",
     theme: "Romance",
+    published: false,
     story:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi tempora, animi nulla eum excepturi velit architecto reiciendis aliquam maiores exercitationem praesentium veniam repellendus veritatis, temporibus sit natus ex autem perspiciatis commodi, nisi amet illo. Velit, voluptatum quidem doloribus nesciunt culpa sint, impedit quod beatae quaerat necessitatibus, quas fugit. Sit sapiente tenetur ratione nulla explicabo ipsam mollitia dolorem, delectus placeat doloremque eaque modi quis optio nesciunt earum magni perferendis amet? Impedit earum at dolore ratione enim ducimus consequuntur, vel doloribus, a quia molestiae placeat unde officia veritatis? Saepe alias sunt quibusdam. Itaque, rem est quia dolorem debitis ea deserunt sit.",
   },
@@ -153,12 +173,14 @@ const addStory = () => {
   const theme = prompt("Enter the theme of the story");
   const story = prompt("Enter the story");
   storyCollection.push({
+    id: storyCollection.length + 1,
     title: title,
     author: author,
     region: region,
     theme: theme,
     story: story,
   });
+  console.log(`${title} by ${author} addedd successfully`);
 
   console.table(storyCollection);
 };
@@ -187,4 +209,15 @@ const booksByAuthors = () => {
   console.table(authorBook);
 };
 
-booksByAuthors();
+const togglePublished = () => {
+  const id = parseInt(prompt("Enter the id of the story you want to toggle"));
+  for (i of storyCollection) {
+    if (i.id === id) {
+      i.published = !i.published;
+      console.table(i);
+      break;
+    }
+  }
+};
+
+togglePublished();
