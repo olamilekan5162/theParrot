@@ -167,4 +167,17 @@ const longestStory = () => {
   }
   console.table(title);
 };
-mainMenu();
+
+const booksByAuthors = () => {
+  const authorBook = {};
+  for (i of storyCollection) {
+    if (i.author in authorBook) {
+      authorBook[i.author]++;
+    } else {
+      authorBook[i.author] = 1;
+    }
+  }
+  console.table(authorBook);
+};
+
+booksByAuthors();
